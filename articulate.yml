@@ -3,13 +3,9 @@ logging:
     io:
       pivotal: DEBUG
 
-spring:
-  application:
-    name: articulate
-
-articulate:
-  attendee-service:
-    uri: http://localhost:8181
+#articulate:
+#  attendee-service:
+#    uri: http://localhost:8181
 
 # Using macros that are replaced by maven build
 info:
@@ -24,3 +20,12 @@ management:
     enabled: true
   cloudfoundry:
     skip-ssl-validation: true
+
+
+security:
+  basic:
+    enabled: false # turn off securing our application endpoints
+
+management:
+  security:
+    enabled: false # turn off securing the actuator endpoints
