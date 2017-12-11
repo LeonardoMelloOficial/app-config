@@ -22,8 +22,3 @@ articulate:
   attendee-service:
     uri: http://localhost:8181
 
-management:
-  security:
-    enabled: false
-  cloudfoundry:
-    skip-ssl-validation: true
